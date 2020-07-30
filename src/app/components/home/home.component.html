@@ -1,0 +1,29 @@
+<!-- Heading -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bg-info p-2">
+                <h3 class="text-white">Add A Task</h3>
+            </div>
+            <div class="content-container p-2">
+                <p>Use this tool to add your to-do list & to remove</p>
+                <form>
+                    <input type="search" class="text" name="task-name" placeholder="Please add your task"  [(ngModel)]="taskText" />
+                </form>
+                <br>
+                <button class="btn btn-primary" type="submit" value="Add task" (click)="addItem(taskText)" [disabled]="!taskText">Add Task</button>
+            </div>
+        </div>
+        <div class="col-md-6 task-section">
+            <div class="bg-info p-2">
+                <h3 class="text-white">TO-DO List <span class="itemCounter">({{itemCounter}})</span></h3>
+            </div>
+            <div *ngIf="tasks.length"     
+                class="content-container project-container p-2">
+                <p *ngFor="let item of tasks; let i = index" 
+                    class="bg-info text-white">{{item}}<span class="float-right" (click)="removeTask(i)">X</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

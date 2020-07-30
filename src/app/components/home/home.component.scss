@@ -1,0 +1,34 @@
+p {
+    margin-top: 16px;
+}
+
+.content-container {
+    background-color: #fff;
+    input.text {
+        width: 100%;
+    }    
+}
+
+.project-container {
+    height: auto;
+    p {
+        padding: 0.5em;
+    .float-right {
+        cursor: pointer;
+        padding: 0 0.5em;
+    }    
+    }
+}
+
+
+@media (max-width: 576px) {
+    .row {
+        display: block;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+    .task-section {
+        margin-top: 15px;
+    }
+}
