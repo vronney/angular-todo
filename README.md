@@ -45,7 +45,7 @@ This example would look something along these lines (or better dive into one of 
 <img src="src/assets/images/Angular-Todo-Desktop.png" width="75%">
 
 ### Mobile view
-<img src="src/assets/images/Angular-Todo-Mobile.png" width="50%" height="500">
+<img src="src/assets/images/Angular-ToDo-Mobile.png" width="50%" height="500">
 
 ## Technologies Used
 - [Angular 9](https://angular.io/)
