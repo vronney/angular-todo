@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Karma-SemiBold;
+    src: url("src/assets/fonts/Karma-SemiBold.ttf") format(true);
+}
+
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url("src/assets/fonts/SourceSansPro-Bold.ttf") format(true);
+}
+
+@font-face {
+    font-family: SourceSansPro-SemiBold;
+    src: url("src/assets/fonts/SourceSansPro-SemiBold.ttf") format(true);
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url("src/assets/fonts/SourceSansPro-Regular.ttf") format(true);
+}
+
+// Fonts
+$ssp-regular: "SourceSansPro-Regular";
+$ssp-bold: "SourceSansPro-Bold";
+$ssp-semibold: "SourceSansPro-Semibold";
+$karma-bold: "Karma-SemiBold";
+
+// Colors
+$light-black: #333333;
+$dark-gray: #3f3f3f;
+$charcoal: #231f20;
+$warm-gray: #d6cec2;
+$eggshell: #f5f3f0;
+$rice: #f9f8f6;
+$yellowish-gray: #fbfbfa;
+$black: #000000;
+$white: #ffffff;
+$blue: #2b44ff;
+$light-cyan: #e2f7f8;
+$light-pink: #fde0d8;
+$flamingo-pink: #feeee9;
+$hover-pink: #fec5b5;
+$disabled: #b9b9b9;
