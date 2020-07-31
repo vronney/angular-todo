@@ -5,14 +5,9 @@
 @import './varible.scss';
 
 * {
-    font-family: $ssp-regular, "arial", sans-serif;
+    font-family: $ssp-regular, "arial", sans-serif !important;
 }
 
 body {
-    background-color: #60c5d3;
-}
-
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
+    background-color: #60c5d3 !important;
 }

@@ -29,12 +29,11 @@
             ],
             "styles": [
               "src/assets/styles/styles.scss",
-              "src/assets/styles/varible.scss"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {
