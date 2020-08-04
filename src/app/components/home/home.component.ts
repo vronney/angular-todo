@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   itemCounter: number;
   taskText: string;
   tasks = [];
+  currentTasks;
   buttonDisabled = true;
   key;
   value;
@@ -18,14 +19,17 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.itemCounter = this.tasks.length;
     this.getItems();
+    this.itemCounter = this.tasks.length;
+    if (this.itemCounter === 0) {
+      localStorage.removeItem('task-items');
+    }
     console.log(this.tasks);
   }
 
-  addItem(key: number, taskText) {
+  addItem(taskText) {
     this.tasks.push(this.taskText);
-    localStorage.setItem(JSON.stringify(key), JSON.stringify(taskText));
+    localStorage.setItem('task-items', JSON.stringify(this.tasks));
     this.taskText = '';
     this.itemCounter = this.tasks.length;
     console.log(this.tasks);
@@ -34,24 +38,21 @@ export class HomeComponent implements OnInit {
   removeTask(i, task) {
     this.tasks.splice(i, 1);
     this.itemCounter = this.tasks.length;
-    localStorage.removeItem(JSON.stringify(i, task));
+    this.currentTasks = this.tasks;
+    localStorage.removeItem('task-items');
+    localStorage.setItem('task-items', JSON.stringify(this.currentTasks));
     if (this.itemCounter === 0) {
-      localStorage.clear();
+      localStorage.removeItem('task-items');
     }
   }
 
   getItems() {
-    // for (let [key, value] of Object.entries(localStorage)) {
-    //   key = JSON.parse(`${key}`);
-    //   value = JSON.parse(`${value}`);
-    //   this.tasks.push(value);
-    //   this.itemCounter = this.tasks.length;
-    // }
-    for (let i = 0; i < localStorage.length; i++) {
-      console.log(localStorage.getItem(localStorage.key(i)));
-      this.value = JSON.parse(localStorage.getItem(localStorage.key(i)));
-      this.tasks.push(this.value);
+    if (localStorage.getItem('task-items')) {
+      this.tasks = JSON.parse(localStorage.getItem('task-items'));
+    } else {
+      this.tasks = [];
     }
+
   }
 
 }

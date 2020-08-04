@@ -11,7 +11,7 @@
                     <input type="search" class="text" name="task-name" placeholder="Please add your task"  [(ngModel)]="taskText" />
                 </form>
                 <br>
-                <button class="btn btn-primary" type="submit" value="Add task" (click)="addItem(itemCounter, taskText)" [disabled]="!taskText">Add Task</button>
+                <button class="btn btn-primary" type="submit" value="Add task" (click)="addItem(taskText)" [disabled]="!taskText">Add Task</button>
             </div>
         </div>
         <div class="col-md-6 task-section">
