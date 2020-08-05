@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Angular 9 Java Developer Tasks Manager",
+        "image": "/assets/images/angular9_java_developer_tasks.png",
+        "content": "User will be able to add new task to the list. The user will then be able to check-off completed task. As user checks-off a task as completes the date will change from blue to green",
+        "projectUrl": "https://angular-java-task-app.herokuapp.com/" 
+    },
+    {
+        "title": "Angular Media Watch List",
+        "image": "/assets/images/media_watch_list.png",
+        "content": "Worked with components, Binding events and properties, Getting data to components, Using directives and pipes, Creating Angular forms, Validating form data, How Angular does dependency injection, Making HTTP calls, Routing, Styling components.",
+        "projectUrl": "https://suspicious-benz-a1bda1.netlify.app"
+    },
+    {
+        "title": "Javascript Card Deck",
+        "image": "/assets/images/card_deck.png",
+        "content": "Working with prototypes and dynamic elements. Using bind, call and apply. Using the Fisher-Yates formula for the shuffle function. When to use e.preventDefault() and when to avoid it. Drap-and-drop life cycle. Using prototypical inheritance to optimize my code",
+        "projectUrl": "https://vronney.github.io/Card-Game/"
+    },
+    {
+        "title": "Hero Page",
+        "image": "/assets/images/hero_page.png",
+        "content": "I want to create a static website with Bootstrap 4 to experiment with video files and practice with different layouts. This project shows how to manipulate website layout with the Bootstrap framework. Throughout this project I demonstrate popular layout patterns and concepts that are key to creating a cohesive layout with Bootstrap.",
+        "projectUrl": "https://vronney.github.io/hero-project/"
+    }
+]

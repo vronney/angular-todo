@@ -11,3 +11,14 @@
 body {
     background-color: #60c5d3 !important;
 }
+
+a.nav-link {
+    color: #fff;
+    &-.active {
+        color: #000;
+    }    
+}
+
+a:hover {
+    color: #000 !important;
+}

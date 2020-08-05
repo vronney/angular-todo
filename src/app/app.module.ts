@@ -8,6 +8,9 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { ProjectsComponent } from './components/projects/projects.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CardsService } from './service/cards.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,15 +18,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavigationComponent,
     HomeComponent,
     ProjectsComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [ ],
+  providers: [CardsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
