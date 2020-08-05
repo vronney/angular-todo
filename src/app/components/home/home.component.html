@@ -11,7 +11,7 @@
                     <input type="search" class="text" name="task-name" placeholder="Please add your task"  [(ngModel)]="taskText" />
                 </form>
                 <br>
-                <button class="btn btn-primary" type="submit" value="Add task" (click)="addItem(taskText)" [disabled]="!taskText">Add Task</button>
+                <button class="btn btn-primary" type="submit" value="Add task" (click)="addItem()" [disabled]="!taskText">Add Task</button>
             </div>
         </div>
         <div class="col-md-6 task-section">
@@ -19,9 +19,9 @@
                 <h3 class="text-white">TO-DO List <span class="itemCounter">({{itemCounter}})</span></h3>
             </div>
             <div *ngIf="tasks.length"     
-                class="content-container project-container p-2">
+                class="content-container project-container p-2 mb-4">
                 <p *ngFor="let task of tasks; let i = index" 
-                    class="bg-info text-white">{{task}}<span class="float-right" (click)="removeTask(i, task)">X</span>
+                    class="bg-info text-white">{{task}}<span class="float-right" (click)="removeTask(i)">X</span>
                 </p>
             </div>
         </div>

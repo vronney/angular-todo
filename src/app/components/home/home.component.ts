@@ -24,18 +24,16 @@ export class HomeComponent implements OnInit {
     if (this.itemCounter === 0) {
       localStorage.removeItem('task-items');
     }
-    console.log(this.tasks);
   }
 
-  addItem(taskText) {
+  addItem() {
     this.tasks.push(this.taskText);
     localStorage.setItem('task-items', JSON.stringify(this.tasks));
     this.taskText = '';
     this.itemCounter = this.tasks.length;
-    console.log(this.tasks);
   }
 
-  removeTask(i, task) {
+  removeTask(i) {
     this.tasks.splice(i, 1);
     this.itemCounter = this.tasks.length;
     this.currentTasks = this.tasks;
